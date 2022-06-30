@@ -12,17 +12,17 @@
 <body>
     <div class="content">
         <div class="box" style="background-color: gray;color:white">
-            <div class="title">Welcome to Nexit App </div>
+            <div class="title">Welcome to Nexit ( beta ) </div>
             <hr>
             <div class="subtitle">This site write as normal HTML</div>
             <div class="box-list">
                 <ul class="list">
-                    <li>You can see code in html.php</li>
-                    <li>Good luck</li>
+                    <li>You can see code in normal.php</li>
+                    <li>Have fun!</li>
                 </ul>
             </div>
-            <div class="subtitle">This site write as function</div>
-            <div>Go to <a href="/">Home</a></div>
+            <div class="subtitle">This site write as normal HTML</div>
+            <div>Go to <a href="/"><button style="cursor: pointer;">Home</button></a></div>
             <div>You can use module function to require module by input the only name's module, it has return module</div>
             <div style="font-size: 18px;">You will find style.css and script.js in static folder.</div>
             <h4 class="contact">Read more at <a class="hove" target="_blank" href="https://github.com/Arikato111/NEXIT">Github</a></h4>
