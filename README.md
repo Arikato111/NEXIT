@@ -8,5 +8,5 @@
 - คัดลอกโค้ดไปวางไว้หน้า `index.php` แล้วรันหน้านั้น
 ```
 <?php
-eval(file_get_contents('https://raw.githubusercontent.com/Arikato111/NEXIT/blob/installer/installer-beta.txt'));
+eval(file_get_contents('https://raw.githubusercontent.com/Arikato111/NEXIT/installer/installer-beta.txt'));
 ```
