@@ -6,13 +6,20 @@
 ### 1.0 version
 ---
 Menu
-[NEXIT คืออะไร]()
-[ติดตั้ง]()
-[function และ multi-page]()
-[modules]()
-[โฟลเดอร์ pages]()
-[โฟลเดอร์ public]()
-[โฟลเดอร์ static]()
+
+[NEXIT คืออะไร](#nexit-คืออะไร)
+
+[ติดตั้ง](#ติดตั้ง)
+
+[function และ multi-page](#function-และ-multi-page)
+
+[modules](#modules)
+
+[โฟลเดอร์ pages](#โฟลเดอร์-pages)
+
+[โฟลเดอร์ public](#โฟลเดอร์-public)
+
+[โฟลเดอร์ static](#โฟลเดอร์-static)
 
 ---
 ### NEXIT คืออะไร
