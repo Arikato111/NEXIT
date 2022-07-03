@@ -8,7 +8,13 @@
 
       <div class="content">
         <div class="box">
-          <div class="title">Welcome to Nexit ( beta ) </div>
+          <div class="title">
+            Welcome to 
+            <span style="margin: 0 20px;">
+              <img class="logo" src="/public/logo.png" alt=""><span class="xt">xt</span>
+            </span>
+             ( 1.0 ) 
+          </div>
           <hr>
           <div class="subtitle">Writing website as Multi or Single </div>
           <div class="box-list">

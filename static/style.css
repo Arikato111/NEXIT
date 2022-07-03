@@ -70,3 +70,12 @@ body {
     border-color: gray;
     color: white;
 }
+
+.logo {
+    width: 50px;
+    /* display: inline-block; */
+    transform: translateY(11%);
+}
+.xt {
+    font-weight: 500;
+}
