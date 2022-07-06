@@ -12,7 +12,7 @@
 <body>
     <div class="content">
         <div class="box" style="background-color: gray;color:white">
-            <div class="title">Welcome to Nexit ( beta ) </div>
+            <div class="title">Welcome to Nexit ( 1.0 ) </div>
             <hr>
             <div class="subtitle">This site write as normal HTML</div>
             <div class="box-list">
