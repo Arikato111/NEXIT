@@ -48,13 +48,13 @@ return function () {
             exit;
         }
     } else {
-        if (file_exists('./pages/_notfound.php')) {
-            $notfound = require('./pages/_notfound.php');
-            if (gettype($notfound) == 'integer') exit;
+        if (file_exists('./pages/_error.php')) {
+            $_error = require('./pages/_error.php');
+            if (gettype($_error) == 'integer') exit;
 
             if (file_exists('./pages/_app.php')) {
                 $_app = require('./pages/_app.php');
-                echo $_app($notfound);
+                echo $_app($_error);
                 exit;
             } else {
                 echo $PageFunc();
