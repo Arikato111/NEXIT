@@ -57,7 +57,7 @@ return function () {
                 echo $_app($_error);
                 exit;
             } else {
-                echo $PageFunc();
+                echo $_error();
                 exit;
             }
         } else {
