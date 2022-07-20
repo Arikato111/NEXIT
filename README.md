@@ -1,9 +1,10 @@
 
 # NEXIT
 
-## Writing as Multi or Single
+## Writing Multi-page with function
 
-### 1.0 version
+### 2.0 version ( Beta )
+
 ---
 Menu
 

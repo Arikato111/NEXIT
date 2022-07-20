@@ -1,10 +1,7 @@
 <?php
-// if other page is function 
-// this function will working to get page function as $PF and show inside
-return function ($PF) {
-  // global title to make support title function from wisit-router
+$export = function ($Component) {
     $GLOBALS['title'] = 'title';
-    $content = $PF(); // working before put content
+    $content = $Component();
 
     return <<<HTML
     <!DOCTYPE html>

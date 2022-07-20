@@ -4,6 +4,7 @@
     * This source code is licensed under the MIT license found in the
     * LICENSE file in the root directory of this source tree.
 */
+require('./modules/use-import/main.m.php');
 return function () {
     // func for get path from url
     $getPath = function () {
@@ -33,14 +34,11 @@ return function () {
             $pages .= '/[]';
         }
     }
-    $pages .= '.php';
-    if (file_exists($pages) && strpos($pages, '_') == false) {
-        $PageFunc = require($pages);
+    if (file_exists($pages . '.php') && strpos($pages, '_') == false) {
+        $PageFunc = import($pages);
         // check type of $PageFunc | if it is html code
-        if (gettype($PageFunc) == 'integer') exit;
-
         if (file_exists('./pages/_app.php')) {
-            $_app = require('./pages/_app.php');
+            $_app = import('./pages/_app');
             echo $_app($PageFunc);
             exit;
         } else {
@@ -49,11 +47,10 @@ return function () {
         }
     } else {
         if (file_exists('./pages/_error.php')) {
-            $_error = require('./pages/_error.php');
-            if (gettype($_error) == 'integer') exit;
+            $_error = import('./pages/_error');
 
             if (file_exists('./pages/_app.php')) {
-                $_app = require('./pages/_app.php');
+                $_app = import('./pages/_app');
                 echo $_app($_error);
                 exit;
             } else {

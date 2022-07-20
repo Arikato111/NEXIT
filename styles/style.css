@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box {
+    display: inline-block;
+    padding: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0;
+    z-index: 1;
+    animation: roling 7s infinite linear;
+}
+
+@keyframes roling {
+    0% {
+        height: 0px;
+        width: 100px;
+        border-width: 50px;
+        transform: rotate(0deg);
+    } 
+    25% {
+        height: 100px;
+        width: 5px;
+        border-width: 0px;
+    }
+    50% {
+        height: 0px;
+        width: 100px;
+        border-width: 50px;
+        transform: rotate(360deg);
+    }
+    75% {
+        height: 100px;
+        width: 5px;
+        border-width: 0px;
+    }
+    100% {
+        height: 0px;
+        width: 100px;
+        border-width: 50px;
+        transform: rotate(720deg);
+    } 
+}

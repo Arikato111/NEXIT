@@ -1,34 +1,26 @@
-<?php return function () { 
-  // function dont need head tag or body tag 
-  // except has no _app.php inside pages
-  $title = require('./modules/wisit-router/title.php');
-  $title('Home');
-  return <<<HTML
-    <link rel="stylesheet" href="/static/style.css">
+<?php
+$title = import('wisit-router/title');
 
-      <div class="content">
+$Home = function () use ($title) {
+  $title('Home'); // use title function to change title
+  return <<<HTML
+    <div class="content">
+      <!-- Style link  -->
+      <link rel="stylesheet" href="/styles/style.css">
+
+      <!-- Content  -->
+      <div>
         <div class="box">
-          <div class="title">
-            Welcome to 
-            <span style="margin: 0 20px;">
-              <img class="logo" src="/public/logo.png" alt=""><span class="xt">xt</span>
-            </span>
-             ( 1.0 ) 
-          </div>
-          <hr>
-          <div class="subtitle">Writing website as Multi or Single </div>
-          <div class="box-list">
-            <ul class="list">
-              <li>write as function</li>
-              <li>write as Normal HTML</li>
-            </ul>
-          </div>
-          <div class="subtitle">This site write as function</div>
-          <div>You can go to <a href="/normal"><button class="btn-g">HTML</button></a> it's write as normal HTML</div>
-            <div>You can use module function to require module by input the only name's module, it has return module</div>
-            <div style="font-size: 18px;">You will find style.css and script.js in static folder.</div>
-            <h4 class="contact">Read more at <a class="hove" target="_blank" href="https://github.com/Arikato111/NEXIT">Github</a></h4>
-          </div>
+          <div class="triangle"></div>
         </div>
+        <h1 align="center">Welcome to NEXIT 2.0</h1>
+        <h2 align="center">
+          Read more at 
+          <a target="_blank" href="https://github.com/Arikato111/NEXIT">Github</a>
+        </h2>
+      </div>
+    </div>
     HTML;
 };
+
+$export = $Home;
