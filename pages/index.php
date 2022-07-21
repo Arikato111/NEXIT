@@ -14,10 +14,11 @@ $Home = function () use ($title) {
           <div class="triangle"></div>
         </div>
         <h1 align="center">Welcome to NEXIT 2.0</h1>
-        <h2 align="center">
+        <h2>Get started by editing pages/index.php</h2>
+        <h3 align="center">
           Read more at 
           <a target="_blank" href="https://github.com/Arikato111/NEXIT">Github</a>
-        </h2>
+        </h3>
       </div>
     </div>
     HTML;
