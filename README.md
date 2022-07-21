@@ -139,5 +139,5 @@ $HomePage = import('./src/Home');
 - คัดลอกโค้ดไปวางไว้หน้า `index.php` แล้วรันหน้านั้น
 ```
 <?php
-eval(file_get_contents('https://raw.githubusercontent.com/Arikato111/NEXIT/installer/Release1-0.txt'));
+eval(file_get_contents('https://raw.githubusercontent.com/Arikato111/NEXIT/installer/Release2-0.txt'));
 ```
