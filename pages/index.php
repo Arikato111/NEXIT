@@ -11,7 +11,7 @@
           <div class="title">
             Welcome to 
             <span style="margin: 0 20px;">
-              <img class="logo" src="/public/logo.png" alt=""><span class="xt">xt</span>
+              <img class="logo" src="/public/logo.png" alt=""><span class="xt">xit</span>
             </span>
              ( 1.0 ) 
           </div>
