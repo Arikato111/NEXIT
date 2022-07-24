@@ -12,6 +12,7 @@ $Home = function () use ($title) {
       <div>
         <div class="box">
           <div class="triangle"></div>
+          <div class="triangle reverse"></div>
         </div>
         <h1 align="center">Welcome to NEXIT 2.0</h1>
         <h2>Get started by editing pages/index.php</h2>
