@@ -3,8 +3,8 @@
   RewriteEngine On
   RewriteBase /
   RewriteRule ^index\.php$ - [L]
-  RewriteCond %{REQUEST_URI} !^/public$
-  RewriteCond %{REQUEST_URI} !^/styles$
+  RewriteCond %{REQUEST_URI} !^/public
+  RewriteCond %{REQUEST_URI} !^/styles
   RewriteRule . /index.php [L]
 
 </IfModule>
