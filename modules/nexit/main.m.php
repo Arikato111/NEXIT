@@ -8,17 +8,7 @@ require('./modules/use-import/main.m.php');
 return function () {
     // func for get path from url
     $getPath = function () {
-        $link = "$_SERVER[REQUEST_URI]";
-        $path = "/";
-        $str_len = strlen($link);
-        for ($i = 1; $i < $str_len; $i++) {
-            if ($link[$i] == '?') {
-                break;
-            } else {
-                $path = $path . $link[$i];
-            }
-        }
-        return $path;
+        return parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
     };
     $path = $getPath();
     $path_ex = explode('/', $path);
