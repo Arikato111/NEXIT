@@ -1,6 +1,7 @@
 <?php
 $export = function ($Component) {
     $GLOBALS['title'] = 'title';
+    $styles = showStyles();
     $content = $Component();
 
     return <<<HTML
@@ -12,11 +13,13 @@ $export = function ($Component) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="/public/logo.svg" type="image/svg" sizes="16x16">
       <title>{$GLOBALS['title']}</title>
+      {$styles} 
+      <link rel="stylesheet" href="/styles/style.css">
     </head>
     <body>
       {$content}
+    <script src="/styles/script.js"></script>
     </body>
     </html>
     HTML;
 };
-?>

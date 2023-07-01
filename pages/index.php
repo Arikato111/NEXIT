@@ -5,10 +5,6 @@ $Home = function () use ($title) {
   $title('Nexit app'); // use title function to change title
   return <<<HTML
     <div class="content">
-      <!-- Style link  -->
-      <link rel="stylesheet" href="/styles/style.css">
-
-      <!-- Content  -->
       <div>
         <div class="box">
           <div class="triangle"></div>
