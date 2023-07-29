@@ -1,10 +1,13 @@
 <?php
-$export = function ($Component) {
-    $GLOBALS['title'] = 'title';
-    $styles = showStyles();
-    $content = $Component();
+$useApi = import('nexit/useApi');
+$export = function ($Component) use ($useApi) {
+  if ($useApi()) return $Component(); // for api
 
-    return <<<HTML
+  $GLOBALS['title'] = 'title';
+  $styles = showStyles();
+  $content = $Component();
+
+  return <<<HTML
     <!DOCTYPE html>
     <html lang="en">
     <head>
