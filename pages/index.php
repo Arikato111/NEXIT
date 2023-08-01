@@ -4,8 +4,8 @@ $title = import('nexit/title');
 $Home = function () use ($title) {
   $title('Nexit app'); // use title function to change title
   return <<<HTML
-    <div class="content">
-      <div>
+    <div class="content bg-violet">
+      <div class="text-white">
         <div class="box">
           <div class="triangle"></div>
           <div class="triangle t-1"></div>
@@ -19,7 +19,7 @@ $Home = function () use ($title) {
         <h2>Get started by editing pages/index.php</h2>
         <h3 align="center">
           Read more at 
-          <a target="_blank" href="https://github.com/Arikato111/NEXIT">Github</a>
+          <a class="a-link" target="_blank" href="https://github.com/Arikato111/NEXIT">Github</a>
         </h3>
       </div>
     </div>
