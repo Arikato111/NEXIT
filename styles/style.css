@@ -1,64 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-family: 'Raleway', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .box {
-    display: inline-block;
-    padding: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: inline-block;
+  padding: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .triangle {
-    position: absolute;
-    background-color: transparent;
-    border: 3px solid black;
-    padding: 0;
-    z-index: 1;
-    animation: roling 10s infinite linear;
+  position: absolute;
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 0;
+  z-index: 1;
+  border-radius: 100%;
 }
-.reverse {
-    animation: roling 20s infinite reverse linear;
+.t-1 {
+  animation: roling 4.1s infinite linear;
+}
+.t-2 {
+  animation: roling 4.2s infinite linear;
+}
+.t-3 {
+  animation: roling 4.4s infinite linear;
+}
+.t-4 {
+  animation: roling 4.6s infinite linear;
+}
+.t-5 {
+  animation: roling 4.8s infinite linear;
+}
+.t-6 {
+  animation: roling 5s infinite linear;
 }
 
 @keyframes roling {
-    0% {
-        height: 0px;
-        width: 200px;
-        transform: rotate(0deg);
-    }
+  0% {
+    height: 0px;
+    width: 200px;
+    transform: rotate(0deg);
+  }
 
-    25% {
-        height: 200px;
-        width: 5px;
-    }
+  25% {
+    height: 200px;
+    width: 5px;
+  }
 
-    50% {
-        height: 0px;
-        width: 200px;
-        transform: rotate(360deg);
-    }
+  50% {
+    height: 0px;
+    width: 200px;
+    transform: rotate(360deg);
+  }
 
-    75% {
-        height: 200px;
-        width: 5px;
-    }
+  75% {
+    height: 200px;
+    width: 5px;
+  }
 
-    100% {
-        height: 0px;
-        width: 200px;
-        transform: rotate(720deg);
-    }
+  100% {
+    height: 0px;
+    width: 200px;
+    transform: rotate(720deg);
+  }
 }

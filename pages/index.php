@@ -8,9 +8,14 @@ $Home = function () use ($title) {
       <div>
         <div class="box">
           <div class="triangle"></div>
-          <div class="triangle reverse"></div>
+          <div class="triangle t-1"></div>
+          <div class="triangle t-2"></div>
+          <div class="triangle t-3"></div>
+          <div class="triangle t-4"></div>
+          <div class="triangle t-5"></div>
+          <div class="triangle t-6"></div>
         </div>
-        <h1 align="center">Welcome to NEXIT 2.0</h1>
+        <h1 align="center">Welcome to NEXIT 2.1</h1>
         <h2>Get started by editing pages/index.php</h2>
         <h3 align="center">
           Read more at 

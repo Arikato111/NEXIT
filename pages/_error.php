@@ -1,16 +1,23 @@
 <?php
 $useApi = import('nexit/useApi');
+$title = import('nexit/title');
 
-$export = function () use ($useApi) {
+$export = function () use ($useApi, $title) {
     // for api 
-    if ($useApi()) return json_encode([
-        'status' => 404,
-        'message' => 'not found'
-    ]);
+    $useApi('api', function ($req, $res) {
+        $res->json([
+            'status' => 404,
+            'message' => 'Not Found'
+        ]);
+    });
 
+    // for normal web pages
+    $title('404 Not Found');
     return <<<HTML
     <div>
-        <h1>Not found this page</h1>
+        <center>
+            <h1>Not found this page</h1>
+        </center>
     </div>
     HTML;
 };

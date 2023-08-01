@@ -1,7 +1,8 @@
 <?php
 $useApi = import('nexit/useApi');
 $export = function ($Component) use ($useApi) {
-  if ($useApi()) return $Component(); // for api
+  //$useApi is use for api. If you dont use it, you can delete it.
+  $useApi('api', $Component);
 
   $GLOBALS['title'] = 'title';
   $styles = showStyles();

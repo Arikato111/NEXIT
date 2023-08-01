@@ -12,6 +12,14 @@
         "use-import": {
             "version": "main",
             "url": "https://github.com/Arikato111/use-import/tree/master"
+        },
+        "wisit-express": {
+            "version": "main",
+            "url": "https://github.com/Arikato111/wisit-express/tree/Release1.0"
+        },
+        "wisios": {
+            "version": "main",
+            "url": "https://github.com/Arikato111/wisios/tree/master"
         }
     }
 }
