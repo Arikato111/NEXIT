@@ -1,5 +1,5 @@
 <?php
 
-$export = $handler = function ($req, $res) {
+$export = function ($req, $res) {
     $res->json(['msg' => 'Hello world']);
 };

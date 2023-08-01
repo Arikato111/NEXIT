@@ -162,9 +162,10 @@ $HomePage = import('./src/Home');
 - ในส่วนของการเขียน **Function** เพื่อใช้งาน **api** จะทำได้ดังตัวอย่างข้างล่าง
 
 ```php
-$export = $handler = function ($req, $res) {
+$export = function ($req, $res) {
     $res->json(['msg' => 'Hello world']);
 };
+
 ```
 
 - อธิบายส่วนประกอบ
